@@ -1,6 +1,6 @@
 import zlib, sys, lzma, json
 
-class Compress:
+class CompressDecompress:
 
     def zlib(self):
 
@@ -54,20 +54,9 @@ class Compress:
 
 
 
-class Decompress:
-
-    def zlib(self):
-        payloadComp = zlib.decompress
-        print(payloadComp)
-        checksumGen = zlib.crc32(payloadComp)
-        print(checksumGen)
-    def lzma(self):
-        print()
-    def bz2(self):
-        print()
 
 
 if __name__ == '__main__':
-    c = Compress()
+    c = CompressDecompress()
     c.zlib()
-    c.zlib()
+    c.lzma()
