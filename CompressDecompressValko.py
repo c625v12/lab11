@@ -68,6 +68,6 @@ class Decompress:
 
 
 if __name__ == '__main__':
-     c = Compress
-     c.zlib(0)
-     c.lzma(0)
+    c = Compress()
+    c.zlib()
+    c.zlib()
